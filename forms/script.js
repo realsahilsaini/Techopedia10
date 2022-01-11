@@ -54,9 +54,8 @@ document.getElementById("Team2Form").addEventListener("click", () => {
     document.getElementById("nexus") ||
     document.getElementById("quantumBreak")
   ) {
-    requireYes(1, 1);
+    requireYes(2, 2);
   }
-  document.getElementById("slots").setAttribute("required", "");
 });
 
 document.getElementById("Team1Form").addEventListener("click", () => {
@@ -70,7 +69,6 @@ document.getElementById("Team1Form").addEventListener("click", () => {
   ) {
     requireNot(1, 1);
   }
-  document.getElementById("slots").removeAttribute("required");
 });
 
 if (document.getElementById("squabble")) {
@@ -95,9 +93,6 @@ if (document.getElementById("squabble")) {
         serialJSON["year" + i] = document.querySelector(
           `input[name="year${i}"]:checked`
         ).value;
-      }
-      if (x == 3) {
-        serialJSON["slot"] = document.getElementById("slots").value;
       }
       serialJSON["total"] = x;
       // console.log(serialJSON);
@@ -158,9 +153,6 @@ if (document.getElementById("squabble")) {
           `input[name="year${i}"]:checked`
         ).value;
       }
-      if (x == 2) {
-        serialJSON["slot"] = document.getElementById("slots").value;
-      }
       serialJSON["total"] = x;
       // console.log(serialJSON);
       sendData("technopreneur", serialJSON);
@@ -189,10 +181,8 @@ if (document.getElementById("squabble")) {
           `input[name="year${i}"]:checked`
         ).value;
       }
-      if (x == 2) {
-        serialJSON["slot"] = document.getElementById("slots").value;
-      }
       serialJSON["total"] = x;
+      // console.log(serialJSON);
       sendData("nexus", serialJSON);
       return false;
     });
@@ -218,9 +208,6 @@ if (document.getElementById("squabble")) {
         serialJSON["year" + i] = document.querySelector(
           `input[name="year${i}"]:checked`
         ).value;
-      }
-      if (x == 2) {
-        serialJSON["slot"] = document.getElementById("slots").value;
       }
       serialJSON["total"] = x;
       // console.log(serialJSON);
@@ -252,6 +239,7 @@ if (document.getElementById("squabble")) {
           `input[name="year${i}"]:checked`
         ).value;
       }
+      // console.log(serialJSON);
       sendData("labyrinth", serialJSON);
       return false;
     });
@@ -260,7 +248,7 @@ let serialJSON = {};
 function sendData(event) {
   serialJSON["event"] = event;
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbyVLh7zzNrDh5o0jhyZ8OZBaZho44J1f372T7OqwJlVNY5nXT6tgKj2aJMQKqR4yyIVuQ/exec",
+    url: "https://script.google.com/macros/s/AKfycbwSdf9_WdSsWeO-9uSDOMGUydPVn9jLKP2UN_-F_X6YreyeWB0MHU30zE0R8xZ6RVmebQ/exec",
 
     type: "POST",
     data: serialJSON,
@@ -279,23 +267,15 @@ function sendData(event) {
 
 window.onload = function () {
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbyVLh7zzNrDh5o0jhyZ8OZBaZho44J1f372T7OqwJlVNY5nXT6tgKj2aJMQKqR4yyIVuQ/exec",
+    url: "https://script.google.com/macros/s/AKfycbwSdf9_WdSsWeO-9uSDOMGUydPVn9jLKP2UN_-F_X6YreyeWB0MHU30zE0R8xZ6RVmebQ/exec",
     type: "GET",
     dataType: "json",
 
     success: function (res) {
       let pageSlot;
-      if (document.getElementById("squabble")) {
-        pageSlot = res.slotSquabble;
-      } else if (document.getElementById("inquisitive")) {
+      if (document.getElementById("inquisitive")) {
         pageSlot = res.slotInqui;
-      } else if (document.getElementById("technopreneur")) {
-        pageSlot = res.slotTechno;
-      } else if (document.getElementById("nexus")) {
-        pageSlot = res.slotNexus;
-      } else if (document.getElementById("quantumBreak")) {
-        pageSlot = res.slotQb;
-      } else if (document.getElementById("labyrinth")) {
+      } else {
         return false;
       }
 
