@@ -248,7 +248,7 @@ let serialJSON = {};
 function sendData(event) {
   serialJSON["event"] = event;
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbyQso9DsV7LoqgTqNDG0ZTY8cqzdYjmcU1-7WmH6AGRUp3vXY2d-3fONqua0b-Jtr0BMg/exec",
+    url: "https://script.google.com/macros/s/AKfycbyvizWlO31ZNiIG-glBoe-_t_4KtjvfBOCcyYtT8pB80d7Fh9YWT55YmvnvVB-dPcCpig/exec",
 
     type: "POST",
     data: serialJSON,
@@ -267,7 +267,7 @@ function sendData(event) {
 
 window.onload = function () {
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbyQso9DsV7LoqgTqNDG0ZTY8cqzdYjmcU1-7WmH6AGRUp3vXY2d-3fONqua0b-Jtr0BMg/exec",
+    url: "https://script.google.com/macros/s/AKfycbyvizWlO31ZNiIG-glBoe-_t_4KtjvfBOCcyYtT8pB80d7Fh9YWT55YmvnvVB-dPcCpig/exec",
     type: "GET",
     dataType: "json",
 
@@ -300,6 +300,7 @@ window.onload = function () {
       }
     },
     error: function (res) {
+      console.log(res);
       alert("There has been a error! please refresh the page and try again.");
     },
   });
