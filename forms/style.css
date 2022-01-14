@@ -517,10 +517,15 @@ padding-bottom: 5px;
   margin: auto; */
   color: #535a71 !important;
   font-family: "Inter", sans-serif;
-  width: 80%;
+  /* width: 80%; */
   margin: auto;
 }
-
+.phn{
+  color: #535a71 !important;
+  font-family: "Inter", sans-serif;
+  /* width: 80%; */
+  margin: auto;
+}
 .Event-about2 {
   /* font-family: "Inter", sans-serif;
     color: #535a71;
