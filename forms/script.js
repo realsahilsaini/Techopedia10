@@ -55,6 +55,7 @@ document.getElementById("Team2Form").addEventListener("click", () => {
     document.getElementById("quantumBreak")
   ) {
     requireYes(2, 2);
+    document.getElementById("team_name").setAttribute("required", "");
   }
 });
 
@@ -68,6 +69,7 @@ document.getElementById("Team1Form").addEventListener("click", () => {
     document.getElementById("quantumBreak")
   ) {
     requireNot(1, 1);
+    document.getElementById("team_name").removeAttribute("required");
   }
 });
 
@@ -140,6 +142,7 @@ if (document.getElementById("squabble")) {
         x = 1;
       } else {
         x = 2;
+        serialJSON["teamName"] = document.getElementById("team_name").value;
       }
       for (i = 1; i <= x; i++) {
         serialJSON["name" + i] = document.getElementById("name" + i).value;
@@ -168,6 +171,7 @@ if (document.getElementById("squabble")) {
         x = 1;
       } else {
         x = 2;
+        serialJSON["teamName"] = document.getElementById("team_name").value;
       }
       for (i = 1; i <= x; i++) {
         serialJSON["name" + i] = document.getElementById("name" + i).value;
@@ -196,6 +200,7 @@ if (document.getElementById("squabble")) {
         x = 1;
       } else {
         x = 2;
+        serialJSON["teamName"] = document.getElementById("team_name").value;
       }
       for (i = 1; i <= x; i++) {
         serialJSON["name" + i] = document.getElementById("name" + i).value;
