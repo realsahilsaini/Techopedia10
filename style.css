@@ -39,6 +39,9 @@ h6 {
   line-height: 0.8 !important;
 }
 
+.techopedia-title{
+  width: 700px;
+}
 
 #events,
 #faq,
@@ -65,7 +68,9 @@ h6 {
 }
 .inquisitive::before,
 .QB::before,
-.labyrinth::before {
+.nexus::before 
+/* .labyrinth::before  */
+{
   content: "";
   position: absolute;
   border-radius: 700px;
@@ -87,10 +92,12 @@ h6 {
 
 .squabble::before,
 .technopreneur::before,
-.nexus::before {
+.labyrinth::before 
+/* .nexus::before  */
+{
   position: absolute;
   content: "";
-  right: -500px;
+  right: -520px;
   transform: translateY(-50%);
   width: 60vw;
   height: 60vw;
@@ -107,6 +114,14 @@ h6 {
     transparent,
     transparent
   );
+}
+
+/* _____________margin______________ */
+.odd {
+  margin-left: -70px !important;
+}
+.even{
+  margin-left: 70px!important;
 }
 
 .primary-title {
@@ -923,6 +938,13 @@ textarea:focus {
   .faq img{
     margin-left:70px;
   }
+
+  .odd{
+    margin-left: 0px !important;
+  }
+  .even{
+    margin-left: 0!important;
+  }
 }
 @media (max-width: 768px) {
   .squabble,
@@ -937,7 +959,9 @@ textarea:focus {
   }
 .inquisitive::before,
 .QB::before,
-.labyrinth::before {
+.nexus::before 
+/* .labyrinth::before  */
+{
   content: "";
   position: absolute;
   border-radius: 700px;
@@ -959,7 +983,9 @@ textarea:focus {
 
 .squabble::before,
 .technopreneur::before,
-.nexus::before {
+/* .nexus::before  */
+.labyrinth::before
+{
   position: absolute;
   content: "";
   right: -230px;
@@ -980,6 +1006,13 @@ textarea:focus {
     transparent
   );
 }
+
+.odd{
+  margin-left: 0px !important;
+}
+.even{
+  margin-left: 0!important;
+}
   .project {
     height: 300px;
   }
@@ -996,6 +1029,9 @@ textarea:focus {
 }
 
 @media (max-width: 320px) {
+  .techopedia-title{
+    width: 300px;
+  }
   .countdown {
     padding-top: 0px;
     font-size: 15px;
@@ -1034,7 +1070,9 @@ textarea:focus {
 
  .inquisitive::after,
 .QB::after,
-.labyrinth::after {
+/* .labyrinth::after  */
+.nexus::after
+{
   content: "";
   position: absolute;
   border-radius: 700px;
@@ -1057,7 +1095,9 @@ textarea:focus {
 
 .squabble::before,
 .technopreneur::before,
-.nexus::before {
+/* .nexus::before  */
+.labyrinth::before
+{
   position: absolute;
   content: "";
   right: -150px;
@@ -1079,6 +1119,12 @@ textarea:focus {
   );
 }
 
+.odd{
+  margin-left: 0px !important;
+}
+.even{
+  margin-left: 0!important;
+}
 .sponsor-image{
   width: 200px;
 }
@@ -1294,7 +1340,14 @@ padding-bottom: 5px;
     padding-top: 10px;
   }
 
-  .squabble,
+  .odd{
+    margin-left: 0px !important;
+  }
+  .even{
+    margin-left: 0!important;
+  }
+
+.squabble,
 .inquisitive,
 .technopreneur,
 .QB,
@@ -1303,9 +1356,11 @@ padding-bottom: 5px;
   margin-bottom: 30px !important;
 }
 
-  .inquisitive::after,
-  .QB::after,
-  .labyrinth::after {
+  .inquisitive::before,
+  .QB::before,
+  .nexus::before
+  /* .labyrinth::before  */
+  {
     content: "";
     position: absolute;
     border-radius: 700px;
@@ -1328,7 +1383,9 @@ padding-bottom: 5px;
   
   .squabble::before,
   .technopreneur::before,
-  .nexus::before {
+  .labyrinth::before 
+  /* .nexus::before  */
+  {
     position: absolute;
     content: "";
     right: -190px;
@@ -1415,8 +1472,12 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#073455", en
     margin-top: -60px;
     margin-bottom: 50px;
   }
-
-  
+  .odd{
+    margin-left: 0px !important;
+  }
+  .even{
+    margin-left: 0!important;
+  }
 }
 @media(max-width: 1218px) and (min-width: 988px){
  .social-links{
@@ -1432,10 +1493,22 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#073455", en
   .social-links{
     margin-left: -46px;
   } 
+  .odd{
+    margin-left: 0px !important;
+  }
+  .even{
+    margin-left: 0!important;
+  }
  }
 @media(max-width: 280px){
   .social-links{
     margin-left: -44px;
   } 
+  .odd{
+    margin-left: 0px !important;
+  }
+  .even{
+    margin-left: 0!important;
+  }
  }
 
