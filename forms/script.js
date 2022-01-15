@@ -16,8 +16,12 @@ function requireNot(iStart, iEnd) {
       .getElementById("branch" + i)
       .removeAttribute("required");
     serialJSON["year" + i] = document
-      .getElementById(`FE${i}`)
+      .getElementById("year" + i)
       .removeAttribute("required");
+
+    // serialJSON["year" + i] = document
+    //   .getElementById(`FE${i}`)
+    //   .removeAttribute("required");
   }
 }
 function requireYes(iStart, iEnd) {
@@ -38,10 +42,14 @@ function requireYes(iStart, iEnd) {
       .getElementById("branch" + i)
       .setAttribute("required", "");
     serialJSON["year" + i] = document
-      .getElementById(`FE${i}`)
+      .getElementById("year" + i)
       .setAttribute("required", "");
+    // serialJSON["year" + i] = document
+    //   .getElementById(`FE${i}`)
+    //   .setAttribute("required", "");
   }
 }
+
 let x;
 document.getElementById("form2").style.display = "none";
 
@@ -92,9 +100,10 @@ if (document.getElementById("squabble")) {
           "college_name" + 1
         ).value;
         serialJSON["branch" + i] = document.getElementById("branch" + i).value;
-        serialJSON["year" + i] = document.querySelector(
-          `input[name="year${i}"]:checked`
-        ).value;
+        serialJSON["year" + i] = document.getElementById("year" + i).value;
+        // serialJSON["year" + i] = document.querySelector(
+        //   `input[name="year${i}"]:checked`
+        // ).value;
       }
       serialJSON["total"] = x;
       // console.log(serialJSON);
@@ -122,9 +131,10 @@ if (document.getElementById("squabble")) {
           "college_name" + 1
         ).value;
         serialJSON["branch" + i] = document.getElementById("branch" + i).value;
-        serialJSON["year" + i] = document.querySelector(
-          `input[name="year${i}"]:checked`
-        ).value;
+        serialJSON["year" + i] = document.getElementById("year" + i).value;
+        // serialJSON["year" + i] = document.querySelector(
+        //   `input[name="year${i}"]:checked`
+        // ).value;
       }
       serialJSON["slot"] = document.getElementById("slots").value;
       serialJSON["total"] = 1;
@@ -152,9 +162,10 @@ if (document.getElementById("squabble")) {
           "college_name" + 1
         ).value;
         serialJSON["branch" + i] = document.getElementById("branch" + i).value;
-        serialJSON["year" + i] = document.querySelector(
-          `input[name="year${i}"]:checked`
-        ).value;
+        serialJSON["year" + i] = document.getElementById("year" + i).value;
+        // serialJSON["year" + i] = document.querySelector(
+        //   `input[name="year${i}"]:checked`
+        // ).value;
       }
       serialJSON["total"] = x;
       // console.log(serialJSON);
@@ -181,9 +192,10 @@ if (document.getElementById("squabble")) {
           "college_name" + 1
         ).value;
         serialJSON["branch" + i] = document.getElementById("branch" + i).value;
-        serialJSON["year" + i] = document.querySelector(
-          `input[name="year${i}"]:checked`
-        ).value;
+        // serialJSON["year" + i] = document.querySelector(
+        //   `input[name="year${i}"]:checked`
+        // ).value;
+        serialJSON["year" + i] = document.getElementById("year" + i).value;
       }
       serialJSON["total"] = x;
       // console.log(serialJSON);
@@ -210,9 +222,10 @@ if (document.getElementById("squabble")) {
           "college_name" + 1
         ).value;
         serialJSON["branch" + i] = document.getElementById("branch" + i).value;
-        serialJSON["year" + i] = document.querySelector(
-          `input[name="year${i}"]:checked`
-        ).value;
+        // serialJSON["year" + i] = document.querySelector(
+        //   `input[name="year${i}"]:checked`
+        // ).value;
+        serialJSON["year" + i] = document.getElementById("year" + i).value;
       }
       serialJSON["total"] = x;
       // console.log(serialJSON);
@@ -240,9 +253,10 @@ if (document.getElementById("squabble")) {
           "college_name" + 1
         ).value;
         serialJSON["branch" + i] = document.getElementById("branch" + i).value;
-        serialJSON["year" + i] = document.querySelector(
-          `input[name="year${i}"]:checked`
-        ).value;
+        serialJSON["year" + i] = document.getElementById("year" + i).value;
+        // serialJSON["year" + i] = document.querySelector(
+        //   `input[name="year${i}"]:checked`
+        // ).value;
       }
       // console.log(serialJSON);
       sendData("labyrinth", serialJSON);
