@@ -1023,7 +1023,7 @@ textarea:focus {
   }
 }
 
-@media screen and (min-width: 365px) and (max-width: 450px) {
+@media screen and (min-width: 365px) and (max-width: 510px) {
   .techopedia-title {
     width: 350px;
   }
@@ -1034,7 +1034,7 @@ textarea:focus {
   }
 }
 
-@media screen and (min-width: 451px) and (max-width: 780px) {
+@media screen and (min-width: 511px) and (max-width: 780px) {
   .techopedia-title {
     width: 500px;
   }
