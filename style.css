@@ -1524,3 +1524,10 @@ textarea:focus {
     margin-left: 0 !important;
   }
 }
+/* 
+@media (min-width: 790px) {
+  .squabble-Eimg {
+    width: 800px;
+    height: 500px;
+  }
+} */
