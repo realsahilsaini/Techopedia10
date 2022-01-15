@@ -51,7 +51,7 @@ function requireYes(iStart, iEnd) {
 }
 
 let x;
-document.getElementById("form2").style.display = "none";
+document.getElementById("form2").style.display = "block";
 
 document.getElementById("Team2Form").addEventListener("click", () => {
   document.getElementById("form2").style.display = "block";
