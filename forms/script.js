@@ -52,6 +52,16 @@ function requireYes(iStart, iEnd) {
 
 let x;
 document.getElementById("form2").style.display = "block";
+// if (document.getElementById("squabble")) {
+//   requireYes(2, 3);
+// } else if (
+//   document.getElementById("technopreneur") ||
+//   document.getElementById("nexus") ||
+//   document.getElementById("quantumBreak")
+// ) {
+//   requireYes(2, 2);
+//   document.getElementById("team_name").setAttribute("required", "");
+// }
 
 document.getElementById("Team2Form").addEventListener("click", () => {
   document.getElementById("form2").style.display = "block";
