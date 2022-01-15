@@ -274,7 +274,18 @@ function sendData(event) {
 
     success: function (res) {
       // console.log(res.returnStatus, res);
-      alert(res.returnStatus);
+
+      if (res.returnStatus == "Successfully Registered!😄") {
+        if (document.getElementById("labyrinth")) {
+          alert(res.returnStatus);
+        } else {
+          alert(
+            "Successfully Registered! Please check your mails for further guidlines😄"
+          );
+        }
+      } else {
+        alert(res.returnStatus);
+      }
       window.location.reload();
     },
     error: function (res) {
