@@ -54,7 +54,10 @@ h6 {
 #timeline {
   scroll-margin: 30px;
 }
-
+.taskade img{
+  width: 145px;
+  margin-bottom:15px;
+}
 .squabble,
 .inquisitive,
 .technopreneur,
