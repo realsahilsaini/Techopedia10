@@ -71,8 +71,9 @@ h6 {
 }
 .inquisitive::before,
 .QB::before,
-.nexus::before 
-/* .labyrinth::before  */ {
+/* .nexus::before  */
+.labyrinth::before  
+{
   content: "";
   position: absolute;
   border-radius: 700px;
@@ -94,8 +95,9 @@ h6 {
 
 .squabble::before,
 .technopreneur::before,
-.labyrinth::before 
-/* .nexus::before  */ {
+/* .labyrinth::before  */
+.nexus::before  
+{
   position: absolute;
   content: "";
   right: -520px;
@@ -958,10 +960,11 @@ textarea:focus {
     margin-bottom: 0px !important;
     padding-top: 0px;
   }
-  .inquisitive::before,
+.inquisitive::before,
 .QB::before,
-.nexus::before 
-/* .labyrinth::before  */ {
+/* .nexus::before  */
+.labyrinth::before  
+{
     content: "";
     position: absolute;
     border-radius: 700px;
@@ -983,8 +986,9 @@ textarea:focus {
 
   .squabble::before,
 .technopreneur::before,
-/* .nexus::before  */
-.labyrinth::before {
+.nexus::before 
+/* .labyrinth::before  */
+{
     position: absolute;
     content: "";
     right: -230px;
@@ -1365,8 +1369,9 @@ textarea:focus {
 
   .inquisitive::before,
   .QB::before,
-  .nexus::before
-  /* .labyrinth::before  */ {
+  /* .nexus::before */
+  .labyrinth::before  
+  {
     content: "";
     position: absolute;
     border-radius: 700px;
@@ -1389,8 +1394,9 @@ textarea:focus {
 
   .squabble::before,
   .technopreneur::before,
-  .labyrinth::before 
-  /* .nexus::before  */ {
+  /* .labyrinth::before  */
+  .nexus::before  
+  {
     position: absolute;
     content: "";
     right: -190px;
