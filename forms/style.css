@@ -494,6 +494,7 @@ padding-bottom: 5px;
 .img-fluid {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .Event-about {
@@ -822,7 +823,7 @@ option {
 
 @media (max-width: 768px) {
   .img-fluid{
-    height:390px;
+    height:350px;
   }
   .hero-form {
     width: 80%;
@@ -861,7 +862,10 @@ option {
 
 @media (max-width: 320px) {
   .img-fluid{
-    height:390px;
+    object-fit: cover;
+  }
+  .img-fluid{
+    height:320px;
   }
   .hero-container {
     max-width: 300px;
