@@ -472,6 +472,9 @@ h6 {
   font-weight: bold;
   font-family: "Space Grotesk", sans-serif;
 }
+.sponsor-title{
+  font-size: 18px;
+}
 #sponsors,
 #previous-sponsors {
   margin: 0 auto;
