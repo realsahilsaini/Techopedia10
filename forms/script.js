@@ -296,6 +296,12 @@ function sendData(event) {
 }
 
 window.onload = function () {
+  if (document.getElementById("labyrinth")) {
+    document.getElementById("labyModal").style.display = "block";
+    document.getElementById("modalBtn").addEventListener("click", () => {
+      document.getElementById("labyModal").style.display = "none";
+    });
+  }
   $.ajax({
     url: "https://script.google.com/macros/s/AKfycby4xNC63sPp-g61ZUO5_g9yfUYYowATbX-hGfPn2gd4kxDvG8HdgcbxwtUWy7eJ9M8LoA/exec",
     type: "GET",
