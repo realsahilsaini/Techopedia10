@@ -267,7 +267,7 @@ let serialJSON = {};
 function sendData(event) {
   serialJSON["event"] = event;
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbx_5P3oJTSq7GG4VemhVQo4vwO-xlYscBjg_mYD_CBwqqySTnXTXCIs187Co_O6fJNlwQ/exec",
+    url: "https://script.google.com/macros/s/AKfycbyBPR1MasJhrS_5-S83iQYIR13EVYTBZ4GziQewXWB2_v6oewr98S9XfHF-RSX6FN1gCw/exec",
 
     type: "POST",
     data: serialJSON,
@@ -303,7 +303,7 @@ window.onload = function () {
     });
   }
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbx_5P3oJTSq7GG4VemhVQo4vwO-xlYscBjg_mYD_CBwqqySTnXTXCIs187Co_O6fJNlwQ/exec",
+    url: "https://script.google.com/macros/s/AKfycbyBPR1MasJhrS_5-S83iQYIR13EVYTBZ4GziQewXWB2_v6oewr98S9XfHF-RSX6FN1gCw/exec",
     type: "GET",
     dataType: "json",
 
